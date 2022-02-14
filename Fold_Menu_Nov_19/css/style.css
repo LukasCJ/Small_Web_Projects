@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: aqua;
+    font-family: sans-serif;
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 90vh;
+    background-color: aqua;
+    position: absolute;
+    right: 0px;
+    top: -90vh;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+#navLinks a {
+    text-decoration: none;
+    color: darkslateblue;
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.4s;
+}
+
+#navLinks a:hover {
+    color:orchid;
+    background-color:darkslateblue;
+}
+
+.burgerLine {
+    width: 25px;
+    height: 3px;
+    background-color: darkslateblue;
+    margin: 5px;
+    border-radius: 1.5px;
+    transition: all 0.5s;
+}
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.crossedLine #line2 {
+    opacity: 0;
+}
+
+.crossedLine #line1 {
+    transform: rotate(-45deg) translate(-5px, 6.4px);
+}
+
+.crossedLine #line3 {
+    transform: rotate(45deg) translate(-5px, -6.4px);
+}
+
+#burger {
+    margin-right: 87.5px;
+    cursor: pointer;
+}
